@@ -5,26 +5,12 @@ public class PlayerControl : MonoBehaviour
 {
 	[HideInInspector]
 	public bool facingRight = true;			// For determining which way the player is currently facing.
-	[HideInInspector]
-	public bool jump = false;				// Condition for whether the player should jump.
-
 
 	public float moveForce = 465f;			// Amount of force added to move the player left and right.
 	public float maxSpeed = 120f;				// The fastest the player can travel in the x axis.
 	public float maxVerticalSpeed = 60f;
-	public AudioClip[] jumpClips;			// Array of clips for when the player jumps.
-	public float jumpForce = 1000f;			// Amount of force added when the player jumps.
-	public AudioClip[] taunts;				// Array of clips for when the player taunts.
-	public float tauntProbability = 50f;	// Chance of a taunt happening.
-	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
-
-
-	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
-	private Transform groundCheck;			// A position marking where to check if the player is grounded.
-	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
-
-
+	
 	void Awake()
 	{
 		// Setting up references.
@@ -46,15 +32,20 @@ public class PlayerControl : MonoBehaviour
 		float x = transform.position.x;
 		float y = transform.position.y;
 
-		Debug.Log("Horizontal" + x.ToString());
-		Debug.Log("Verical" + y.ToString());
-
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		// anim.SetFloat("Speed", Mathf.Abs(h));
 
 		// Slow velocity in screen edges
-		if(y > 19.0 || y < -19.0){
+		if(y > 19.0 || y < -15.0){
 			rigidbody2D.velocity = Vector3.zero;
+			rigidbody2D.Sleep ();
+
+			if (y > 19f && vh > 0) {
+				return;
+			}
+			if (y < -15f && vh < 0) {
+				return;
+			}
 		}
 
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
