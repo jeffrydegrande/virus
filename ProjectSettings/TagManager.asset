@@ -56,9 +56,21 @@ TagManager:
     userID: 1
     uniqueID: 3363470833
     locked: 0
-  - name: Background
+  - name: Background Main
+    userID: 6
+    uniqueID: 1488889971
+    locked: 0
+  - name: Background 1
     userID: 2
     uniqueID: 1535931219
+    locked: 0
+  - name: Background 2
+    userID: 7
+    uniqueID: 37978823
+    locked: 0
+  - name: Background 3
+    userID: 8
+    uniqueID: 2828741389
     locked: 0
   - name: Character
     userID: 4
