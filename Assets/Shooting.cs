@@ -8,7 +8,7 @@ public class Shooting : MonoBehaviour {
 	public float projectileSpeed = 120f;
 	
 	void Update () {
-		if (Input.GetButtonDown("Jump")) {
+		if (Input.GetButtonDown("Fire")) {
 			Rigidbody2D bulletClone = (Rigidbody2D)Instantiate (projectile, transform.position, transform.rotation);
 			bulletClone.velocity = transform.right * projectileSpeed;
 		}
