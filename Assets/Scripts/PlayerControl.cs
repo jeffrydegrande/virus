@@ -68,6 +68,7 @@ public class PlayerControl : MonoBehaviour
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, Mathf.Sign (rigidbody2D.velocity.y) * maxVerticalSpeed);
 		}
 
+        /*
 		// If the input is moving the player right and the player is facing left...
 		if(h > 0 && !facingRight)
 			// ... flip the player.
@@ -76,6 +77,7 @@ public class PlayerControl : MonoBehaviour
 		else if(h < 0 && facingRight)
 			// ... flip the player.
 			Flip();
+        */
 	}
 	
 	
