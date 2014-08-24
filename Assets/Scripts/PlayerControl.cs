@@ -43,10 +43,19 @@ public class PlayerControl : MonoBehaviour
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
 		float vh = Input.GetAxis("Vertical");
+		float x = transform.position.x;
+		float y = transform.position.y;
 
+		Debug.Log("Horizontal" + x.ToString());
+		Debug.Log("Verical" + y.ToString());
 
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		// anim.SetFloat("Speed", Mathf.Abs(h));
+
+		// Slow velocity in screen edges
+		if(y > 19.0 || y < -19.0){
+			rigidbody2D.velocity = Vector3.zero;
+		}
 
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * rigidbody2D.velocity.x < maxSpeed) {
