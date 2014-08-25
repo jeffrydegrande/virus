@@ -19,6 +19,17 @@ public class TakeDamage : MonoBehaviour {
 	}
 
 
+	public void OnTriggerEnter2D(Collider2D collider) {
+		if ( collider.gameObject.tag == "VirusCollector" ) {
+			Destroy (gameObject );
+		} else {
+		
+			// player collision detecction here.
+			//	Debug.Log ( collider.gameObject.tag );
+		}
+	}
+
+
 	public void ApplyDamage(int value) {
 		hitpoints -= value;
 		game.audio.PlayOneShot (monsterHit);
