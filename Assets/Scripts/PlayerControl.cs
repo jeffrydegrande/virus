@@ -37,9 +37,12 @@ public class PlayerControl : MonoBehaviour
 
 
 		// keep player within screen bounds
-		if(y > 19.0 || y < -15.0){
-			rigidbody2D.velocity = Vector3.zero;
+		if(y > 19.0 || y < -15.0) {
+			// rigidbody2D.velocity = Vector3.zero;
 			// rigidbody2D.Sleep ();
+
+			rigidbody2D.velocity *= -1;
+
 
 			if (y > 19f && vh > 0) {
 				return;
@@ -50,7 +53,10 @@ public class PlayerControl : MonoBehaviour
 		}
 
 		if (x > 35.0f || x < -35.0) {
-			rigidbody2D.velocity = Vector3.zero;
+			// rigidbody2D.velocity = Vector3.zero;
+
+			rigidbody2D.velocity *= -1;
+
 			if (x > 35.0f && h > 0) {
 				return;
 			}
