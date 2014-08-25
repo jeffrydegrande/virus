@@ -1,0 +1,203 @@
+fileFormatVersion: 2
+guid: efdbc04044f044b99acaef72c574cf59
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SPRITE_LOW
+    21300002: fly1
+    21300004: fly2
+    21300006: fly3
+    21300008: fly4
+    21300010: fly5
+    21300012: explode1
+    21300014: explode2
+    21300016: explode3
+    21300018: explode4
+    21300020: hit1
+    21300022: hit2
+    21300024: explode5
+    21300026: explode5
+    21300028: explode7
+    21300030: explode6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fly1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 113
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fly2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 114
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fly3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 113
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fly4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 115
+        width: 37
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fly5
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 113
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 65
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 63
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 57
+        width: 37
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 57
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hit1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 9
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hit2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 52
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode6
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 53
+        width: 27
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explode7
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 59
+        width: 13
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

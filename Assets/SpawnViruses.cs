@@ -19,8 +19,7 @@ public class SpawnViruses : MonoBehaviour {
 
 			GameObject clone = (GameObject)Instantiate(virus, p, transform.rotation);
 			clone.rigidbody2D.velocity = transform.right * - Random.Range (40f, 60f);
-
-
+	
 		}
 	}
 }
