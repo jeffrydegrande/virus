@@ -18,4 +18,10 @@ public class BulletHit : MonoBehaviour {
 			score.SendMessage("Increase", 1);
 		}
 	}
+	
+	void OnTriggerEnter2D(Collider2D collider) {
+		if (collider.gameObject.tag == "Enemy" ) {
+			collider.gameObject.SendMessage ("ApplyDamage", 1);
+		}
+	}
 }
