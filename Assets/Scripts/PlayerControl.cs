@@ -35,10 +35,11 @@ public class PlayerControl : MonoBehaviour
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		// anim.SetFloat("Speed", Mathf.Abs(h));
 
-		// Slow velocity in screen edges
+
+		// keep player within screen bounds
 		if(y > 19.0 || y < -15.0){
 			rigidbody2D.velocity = Vector3.zero;
-			rigidbody2D.Sleep ();
+			// rigidbody2D.Sleep ();
 
 			if (y > 19f && vh > 0) {
 				return;
@@ -48,6 +49,16 @@ public class PlayerControl : MonoBehaviour
 			}
 		}
 
+		if (x > 35.0f || x < -35.0) {
+			rigidbody2D.velocity = Vector3.zero;
+			if (x > 35.0f && h > 0) {
+				return;
+			}
+			if (x < -35.0f && h < 0) {
+				return;
+			}
+		}
+	
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * rigidbody2D.velocity.x < maxSpeed) {
 			// ... add a force to the player.
