@@ -775,7 +775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitpoints: 4
   monsterHit: {fileID: 8300000, guid: c9cf17d0b16fe4af9b1938ee6de58fb0, type: 3}
-  monsterExplodes: {fileID: 8300000, guid: 6254bebae706c4faca2391db72c2c000, type: 3}
+  monsterExplodes: {fileID: 8300000, guid: 5665552e816d5454ca68a74b61cb713d, type: 3}
   game: {fileID: 0}
 --- !u!50 &899304444
 Rigidbody2D:
@@ -978,7 +978,7 @@ AudioSource:
   m_GameObject: {fileID: 954375339}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 98f97362d63ea424898ace10073fc469, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 30d4d853699364a11b6d8bbe4a82f88e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1268,7 +1268,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 53390aa47aac244f29f7a90a4eeafc14, type: 2}
       propertyPath: monsterExplodes
       value: 
-      objectReference: {fileID: 8300000, guid: 6254bebae706c4faca2391db72c2c000, type: 3}
+      objectReference: {fileID: 8300000, guid: 5665552e816d5454ca68a74b61cb713d, type: 3}
     - target: {fileID: 11400000, guid: 53390aa47aac244f29f7a90a4eeafc14, type: 2}
       propertyPath: hitpoints
       value: 4
