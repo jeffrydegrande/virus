@@ -36,10 +36,15 @@ public class TakeDamage : MonoBehaviour {
 	void Die()
 	{
 		score.SendMessage("Increase", 1);
-
 		anim.SetBool("Dead", true);
-		Destroy(gameObject);
+		rigidbody2D.velocity = Vector3.zero;
 		game.audio.PlayOneShot(monsterExplodes);
+		StartCoroutine(Cleanup ());
+	}
+
+	IEnumerator Cleanup() {
+		yield return new WaitForSeconds(0.4f);
+		Destroy(gameObject);
 	}
 }
 
